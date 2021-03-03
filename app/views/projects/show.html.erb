@@ -3,3 +3,4 @@
 <h1> <%= @project.title %> </h1>
 <em> <%= @project.subtitle %> </em>
 <p><%= @project.body %></p>
+<%= link_to "Delete Project", project_path(@project), method: :delete, data: {confirm: "are you sure?"} %>
