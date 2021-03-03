@@ -25,7 +25,7 @@ class ProjectsController < ApplicationController
 
   def update 
     @project = Project.find(params[:id])
-    
+
     respond_to do |format|
       if @project.update(params.require(:project).permit(:title,:subtitle,:body))
         format.html {redirect_to projects_path, notice: "Project details has been updated"}
@@ -33,6 +33,10 @@ class ProjectsController < ApplicationController
         format.html { render:edit }
       end
     end
+  end
+
+  def show
+    @project = Project.find(params[:id])
   end
 
 end
