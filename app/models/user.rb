@@ -4,7 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  validatables_presence_of :name
+  validates_presence_of :name
 
   def first_name
     self.name.split.first
