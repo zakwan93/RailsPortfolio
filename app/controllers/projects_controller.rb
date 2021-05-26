@@ -1,5 +1,6 @@
 class ProjectsController < ApplicationController
   layout "projects"
+   access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
   def index
     # @projects = ruby_on_rails_project_items
     @projects = Project.all
