@@ -1,31 +1,12 @@
-<h1>Hi, <%= current_user.first_name  %></h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<main class="px-3">
+    <h1>Cover your page.</h1>
+    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+    <p class="lead">
+        <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white text-primary">Learn more</a>
+    </p>
+</main>
 
-
-<h1>Blogs</h1>
-<table>
-    <thead>
-        <tr>
-            <th>Title</th>
-            <th>Body</th>
-            <th colspan="3"></th>
-        </tr>
-    </thead>
-
-    <tbody>
-        <% @posts.each do |blog| %>
-        <tr>
-            <td><%= blog.title %></td>
-            <td><%= blog.body %></td>
-            <td><%= link_to blog.status, toggle_status_blog_path(blog) %></td>
-            <td><%= link_to 'Show', blog %></td>
-            <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-            <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
-        <% end %>
-    </tbody>
-</table>
-
-
-<h1>Skills</h1>
-<%= @skills.inspect %>
+<footer class="mt-auto text-white-50">
+    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+</footer>
+</div>
