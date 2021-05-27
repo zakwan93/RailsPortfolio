@@ -17,6 +17,8 @@
 <body class="d-flex h-100 text-center text-white bg-dark">
     <div class="container d-flex w-100 vh-100 p-3 mx-auto flex-column">
         <%= render "shared/application_nav" %>
+        <p class="notice text-danger"><%= notice %></p>
+        <p class="alert text-danger"><%= alert %></p>
         <%= yield %>
         <%= source_helper("application") %>
         <%= render "shared/application_footer" %>
