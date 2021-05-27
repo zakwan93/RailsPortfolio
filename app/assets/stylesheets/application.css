@@ -1,12 +1,10 @@
 @import "bootstrap";
+@import "font-awesome";
 /*
  * Globals
- */
-
-/* Custom default button */
+ */ /* Custom default button */
 .btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
+  .btn-secondary: hover, .btn-secondary: focus {
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
 }
