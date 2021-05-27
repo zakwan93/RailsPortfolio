@@ -14,12 +14,12 @@
 
 </head>
 
-<body class="d-flex vh-100 text-center text-white bg-dark">
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+<body class="d-flex h-100 text-center text-white bg-dark">
+    <div class="container d-flex w-100 vh-100 p-3 mx-auto flex-column">
         <%= render "shared/application_nav" %>
-        <%= login_helper %>
         <%= yield %>
         <%= source_helper("application") %>
+        <%= render "shared/application_footer" %>
     </div>
 </body>
 
