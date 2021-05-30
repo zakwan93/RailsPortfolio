@@ -28,7 +28,8 @@ class ProjectsController < ApplicationController
   end
 
   def edit
-    @project = Project.find(params[:id])
+    # @project = Project.find(params[:id])
+    @project = Project.friendly.find(params[:id])
   end
 
   def update 
