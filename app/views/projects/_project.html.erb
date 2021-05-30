@@ -1,6 +1,6 @@
-<p><%= link_to project.title, project_show_path(project) %></p>
-<p><%= project.subtitle %></p>
-<p><%= project.body %></p>
-<%= image_tag project.thumb_image unless project.thumb_image.nil? %>
-<%= link_to "Edit", edit_project_path(project.id) if logged_in?(:site_admin) %>
-<%= link_to "Delete Project", project_path(project), method: :delete, data: {confirm: "are you sure?"} if logged_in?(:site_admin) %>
+<div class="card">
+    <%= image_tag project.thumb_image unless project.thumb_image.nil? %>
+    <p class="card-text">
+        <span><%= link_to project.title, project_show_path(project) %></span> <%= project.subtitle %>
+    </p>
+</div>
