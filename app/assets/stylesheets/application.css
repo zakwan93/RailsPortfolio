@@ -96,3 +96,12 @@ body {
 .auth-links a:hover {
   color: rgba(200, 196, 196, 0.8);
 }
+
+.app-nav span {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.app-nav span a:hover {
+  color: rgba(200, 196, 196, 0.8);
+}
