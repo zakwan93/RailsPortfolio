@@ -12,12 +12,16 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
-// import {} from 'jquery-ujs'
-import 'bootstrap/dist/js/bootstrap'
-require("jquery_ujs")
-import 'bootstrap/dist/css/bootstrap'
-require("stylesheets/application.scss")
-require("packs/html.sortable")
-import "@fortawesome/fontawesome-free/css/all"
 // require("trix")
 // require("@rails/actiontext")
+
+require("packs/html.sortable");
+import 'bootstrap/dist/js/bootstrap'
+import 'bootstrap/dist/css/bootstrap'
+require("stylesheets/application.scss")
+import "@fortawesome/fontawesome-free/css/all"
+import 'jquery-ui'
+
+$( () => {
+	$('.sortable').sortable()
+  })
