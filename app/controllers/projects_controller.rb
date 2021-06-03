@@ -1,9 +1,16 @@
 class ProjectsController < ApplicationController
   layout "projects"
-   access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
+   access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit, :sort]}, site_admin: :all
   def index
     # @projects = ruby_on_rails_project_items
-    @projects = Project.all
+    @projects = Project.position_by
+  end
+
+  def sort
+    params[:order].each do |key, value|
+      Project.find(value[:id]).update(position: value[:position])
+    end
+    render nothing: true
   end
 
   def react 
