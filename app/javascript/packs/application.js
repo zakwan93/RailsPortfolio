@@ -16,6 +16,7 @@ ActiveStorage.start()
 // require("@rails/actiontext")
 
 require("packs/html.sortable");
+require("packs/project");
 import 'bootstrap/dist/js/bootstrap'
 import 'bootstrap/dist/css/bootstrap'
 require("stylesheets/application.scss")

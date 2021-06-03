@@ -6,6 +6,13 @@ class ProjectsController < ApplicationController
     @projects = Project.position_by
   end
 
+  def sort
+    params[:order].each do |key, value|
+      Project.find(value[:id]).update(position: value[:position])
+    end
+    render nothing: true
+  end
+
   def react 
     @react_projects = Project.react
   end
