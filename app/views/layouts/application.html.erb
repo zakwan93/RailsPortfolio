@@ -16,6 +16,15 @@
 
 <body class="d-flex h-100 text-center text-white bg-dark">
     <div class="container d-flex w-100 vh-100 p-3 mx-auto flex-column">
+        <%= video_tag(
+            'HardDrivePhotojpeg.mp4',
+            id: 'background',
+            autoplay: true,
+            loop: true,
+            muted: true,
+            poster: 'home_bg.png'
+        )
+        %>
         <%= render "shared/application_nav" %>
         <p class="notice text-danger"><%= notice %></p>
         <p class="alert text-danger"><%= alert %></p>
