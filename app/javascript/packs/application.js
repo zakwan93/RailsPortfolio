@@ -15,8 +15,10 @@ ActiveStorage.start()
 // require("trix")
 // require("@rails/actiontext")
 
+
 require("packs/html.sortable");
 require("jquery")
+require("gritter/js/jquery.gritter.js")
 require("@nathanvda/cocoon")
 require("packs/project");
 import 'bootstrap/dist/js/bootstrap'

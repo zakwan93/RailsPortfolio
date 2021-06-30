@@ -120,3 +120,16 @@ body {
   background: image-url("home_bg.png") no-repeat;
   background-size: cover;
 }
+/* .custom_gritter {
+  background-color: green;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border: 1px solid white;
+}
+
+.gritter-item-wrapper {
+  position: relative;
+  margin: 0 0 10px 0;
+  background: url(ie-spacer.gif);
+} */

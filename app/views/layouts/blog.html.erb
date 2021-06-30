@@ -19,11 +19,10 @@
     <div class="container">
         <div class="row">
             <!-- start of container and row element -->
-            <p class="notice"><%= notice %></p>
-            <p class="alert"><%= alert %></p>
             <%= yield %>
             <%= render "shared/blog_sidebar" %>
             <%= render "shared/blog_footer" %>
+
             <%= source_helper("blog") %>
 
         </div>
