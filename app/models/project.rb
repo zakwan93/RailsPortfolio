@@ -4,8 +4,10 @@ class Project < ApplicationRecord
                                   reject_if: lambda { |attrs| attrs['name'].blank?  } 
 
     include Placeholder
-
     validates_presence_of :title, :body, :main_image, :thumb_image
+
+    mount_uploader :thumb_image, ProjectUploader
+    mount_uploader :main_image, ProjectUploader
 
     def self.react
       where(subtitle: 'ReactJS')
