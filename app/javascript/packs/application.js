@@ -16,6 +16,8 @@ ActiveStorage.start()
 // require("@rails/actiontext")
 
 require("packs/html.sortable");
+require("jquery")
+require("@nathanvda/cocoon")
 require("packs/project");
 import 'bootstrap/dist/js/bootstrap'
 import 'bootstrap/dist/css/bootstrap'
