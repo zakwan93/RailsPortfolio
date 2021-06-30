@@ -1,7 +1,7 @@
 <div class="container p-4 vh-100 text-center px-3 d-flex mx-auto flex-column justify-content-center">
     <div class="row">
         <div class="col-md-7">
-            <%= image_tag project_img(@project.thumb_image, 'main'), width:"100%" %>
+            <%= image_tag project_img(@project.main_image, 'main'), width:"100%" %>
         </div>
         <div class="col-md-5">
             <h1> <%= @project.title %> </h1>
@@ -13,6 +13,13 @@
             <% @project.technologies.each do |t| %>
             <p> <%= t.name %> </p>
             <% end %>
+
+            <% if logged_in?(:site_admin) %>
+            <div class="col-md-12 mb-3">
+                <%= link_to "Edit Project", edit_project_path(@project), class: 'btn btn-warning' %>
+            </div>
+            <% end %>
+
             <%= link_to "Delete Project", project_path(@project), method: :delete, data: {confirm: "are you sure?"} if logged_in?(:site_admin) %>
 
         </div>
