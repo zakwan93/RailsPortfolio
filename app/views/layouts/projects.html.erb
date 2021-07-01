@@ -15,10 +15,10 @@
 
 <body>
     <%= render "shared/project_nav" %>
+    <%= alerts %>
     <%= render "shared/project_masthead" unless logged_in?(:site_admin) %>
     <%= yield %>
     <%= render "shared/project_footer" %>
-    <%= render 'shared/alerts' %>
     <%= source_helper("project") %>
 </body>
 

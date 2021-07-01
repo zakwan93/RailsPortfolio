@@ -61,3 +61,15 @@ footer {
 footer p {
   margin-bottom: 0.25rem;
 }
+
+.custom_gritter {
+  background-color: green;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border: 1px solid white;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0 0 10px 0;
+}

@@ -59,3 +59,17 @@ module ApplicationHelper
         "active" if current_page? path
     end
 end
+
+
+
+def alerts
+    alert = (flash[:alert] || flash[:eroor] || flash[:notice])
+
+    if alert
+        alert_generator alert
+    end
+end
+
+def alert_generator msg
+    js add_gritter(msg, :title => "Zakwan's Project", :sticky => false, :time => 1000, :class_name => "custom_gritter") 
+end
