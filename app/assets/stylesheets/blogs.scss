@@ -165,3 +165,16 @@ h6,
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
+
+.custom_gritter {
+  background-color: green;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border: 1px solid white;
+}
+
+.gritter-item-wrapper {
+  position: relative;
+  margin: 0 0 10px 0;
+}

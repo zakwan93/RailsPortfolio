@@ -120,7 +120,7 @@ body {
   background: image-url("home_bg.png") no-repeat;
   background-size: cover;
 }
-/* .custom_gritter {
+.custom_gritter {
   background-color: green;
   border-radius: 5px;
   text-align: center;
@@ -131,5 +131,4 @@ body {
 .gritter-item-wrapper {
   position: relative;
   margin: 0 0 10px 0;
-  background: url(ie-spacer.gif);
-} */
+}
