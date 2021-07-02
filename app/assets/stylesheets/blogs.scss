@@ -165,3 +165,14 @@ h6,
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
+
+.custom_gritter {
+  background-color: green;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid white;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  right: 0;
+}

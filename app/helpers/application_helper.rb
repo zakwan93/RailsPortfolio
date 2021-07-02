@@ -71,5 +71,5 @@ def alerts
 end
 
 def alert_generator msg
-    js add_gritter(msg, :title => "Zakwan's Project", :sticky => false, :time => 1000, :class_name => "custom_gritter") 
+    js add_gritter(msg, :title => "Zakwan's Project", :class_name => "custom_gritter") 
 end
