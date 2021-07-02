@@ -42,6 +42,10 @@ module ApplicationHelper
                 url: projects_path,
                 title: 'Projects'
             },
+            {
+                url: tech_news_path,
+                title: 'Tech News'
+            },
         ]
     end
     
