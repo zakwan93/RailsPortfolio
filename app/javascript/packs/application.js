@@ -21,6 +21,7 @@ require("jquery")
 require("gritter/js/jquery.gritter.js")
 require("@nathanvda/cocoon")
 require("packs/project");
+require("cable")
 import 'bootstrap/dist/js/bootstrap'
 import 'bootstrap/dist/css/bootstrap'
 require("stylesheets/application.scss")
